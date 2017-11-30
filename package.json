@@ -1,0 +1,28 @@
+{
+  "name": "settlement-calculator",
+  "version": "1.0.0",
+  "description": "settlement calculator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cyberworld-builders/settlement-calculator.git"
+  },
+  "keywords": [
+    "settlement",
+    "calculator"
+  ],
+  "author": "jay long",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cyberworld-builders/settlement-calculator/issues"
+  },
+  "homepage": "https://github.com/Cyberworld-builders/settlement-calculator#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-sass": "^3.1.0"
+  }
+}
