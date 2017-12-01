@@ -1,7 +1,5 @@
 jQuery(document).ready(function($){
 
-
-
   $('.calculate').click(function(e){
 
     e.preventDefault();
@@ -12,12 +10,6 @@ jQuery(document).ready(function($){
     var future_medical = 0;
 
     var damages_multiplier = 1;
-
-    // var medical_expenses = parseInt($('#medicalExpenses').val());
-    // var property_damages = parseInt($('#propertyDamages').val());
-    // var lost_earnings = parseInt($('#lostEarnings').val());
-    // var future_medical = parseInt($('#futureMedical').val());
-
 
     if(Number($('#medicalExpenses').val()) >= 0){
       medical_expenses = Number($('#medicalExpenses').val());
@@ -35,13 +27,9 @@ jQuery(document).ready(function($){
       future_medical = Number($('#futureMedical').val());
     }
 
-
-
-    if(parseInt($('#damagesMultiplier').val()) > 0){
-      damages_multiplier = parseInt($('#damagesMultiplier').val());
+    if(Number($('#damagesMultiplier').val()) > 0){
+      damages_multiplier = Number($('#damagesMultiplier').val());
     }
-
-    console.log(medical_expenses + property_damages);
 
     var total = ( ( medical_expenses + future_medical ) * damages_multiplier ) + lost_earnings + future_medical + property_damages;
     var without_damages = medical_expenses + future_medical + lost_earnings + future_medical + property_damages;
@@ -55,7 +43,5 @@ jQuery(document).ready(function($){
     });
 
   });
-
-
 
 });

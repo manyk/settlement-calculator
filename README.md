@@ -1,16 +1,11 @@
-# wp-plugin-boilerplate
+# Injury Settlement Calculator
 
-## this should get you started. just follow the conventions outlined
+## Creates a shortcode that you can use to add a calculator to any page on your wordpress site.
 
-https://github.com/Cyberworld-builders/wp-plugin-boilerplate
+https://github.com/Cyberworld-builders/settlement-calculator
 
-- first i would rename every instance of my_plugin to an actual name
-- ideally i would like to write some sort of script that automates this boilerplate but this repo should at least be helpful
-- just rename my_plugin and then follow the conventions
-
-1. git clone the repo
-2. find/replace all instances of my_plugin
-3. cd into the root of the plugin and rm -rf .git
-4. now you can either do a fresh git init and add the remote of a new repo, or let it fall under a greater repo
-5. just follow the conventions and develop away
-6. this is a class-based wordpress plugin with auto-loading. enjoy.
+1. upload and install the plugin
+2. there are 2 settings options in the wp-admin. you can set a phone number and the url of your contact page to populate the buttons at the bottom of the form.
+3. from there just include the shortcode [settlement_calculator] anywhere in your content section
+4. pull requests welcome
+5. any comments or questions, let me know
