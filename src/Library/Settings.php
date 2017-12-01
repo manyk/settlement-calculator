@@ -100,11 +100,11 @@
       data-custom="<?php echo esc_attr( $args['settcalc_custom_data'] ); ?>"
       name="settcalc_options[<?php echo esc_attr( $args['label_for'] ); ?>]"
       type="text" value="<?php echo $options[ $args['label_for'] ]; ?>"
-      placeholder="18005555555"
+      placeholder="1-800-555-5555"
       />
 
       <p class="description">
-      <?php esc_html_e( "This is the actual numbers that will be dialed by the user's phone. Make sure this is the entire 10 digit number with no sybols or other non-numeric characters. ", 'settcalc' ); ?>
+      <?php esc_html_e( "This is the actual numbers that will be dialed by the user's phone. Make sure this is the entire 10 digit number with dashes and no other symbols. ", 'settcalc' ); ?>
       </p>
      <?php
 

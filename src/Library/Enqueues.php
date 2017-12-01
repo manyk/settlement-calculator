@@ -20,27 +20,15 @@
       // enqueue default styles
       $this->enqueue_default_styles();
 
-
-      wp_register_script('prefix_bootstrap', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js');
-      wp_enqueue_script('prefix_bootstrap');
-
-      wp_register_style('prefix_bootstrap', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css');
-      wp_enqueue_style('prefix_bootstrap');
-
-      wp_enqueue_style( 'load-fa', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' );
-
-
-
-
-
     }
 
 
     public function register_styles(){
-      wp_register_style('sc-styles-css', SETTLEMENT_CALCULATOR_URL . "/css/main.css", array('prefix_bootstrap') );
+      wp_register_style('sc-styles-css', SETTLEMENT_CALCULATOR_URL . "/css/main.css", array('settcalc-bootstrap-css') );
       // wp_register_style('gc-gmaps-css', "https://fonts.googleapis.com/css?family=Roboto:300,400,500");
-      // wp_register_style('jquery-ui-css', "//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css");
-
+      wp_register_style('jquery-ui-css', "//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css");
+      wp_register_style( 'settcalc-fa-css', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' );
+      wp_register_style('settcalc-bootstrap-css', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css');
 
     }
 
@@ -54,25 +42,21 @@
     public function register_scripts(){
 
       //default scripts and object classes
-      // wp_register_script( 'gc-scripts-js', GFORM_CUSTOM_URL . 'dist/js/scripts.js', array('jquery','wp-api'));
-
+      wp_register_script( 'settcalc-scripts-js',  SETTLEMENT_CALCULATOR_URL . 'js/scripts.js', array('jquery'));
+      wp_register_script( 'settcalc-calculator-js',  SETTLEMENT_CALCULATOR_URL . 'js/calculator.js', array('settcalc-scripts-js'), true);
+      wp_register_script('settcalc-bootstrap-js', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js');
 
 
     }
 
     public function enqueue_default_scripts(){
-      // wp_enqueue_script( 'gc-scripts-js' );
-      // wp_enqueue_script( 'google-maps-js' );
-      // wp_enqueue_script( 'google-place-js' );
-      // wp_enqueue_script( 'google-maps-main-js' );
-      // wp_enqueue_script( 'gc-range-slider' );
-      // wp_enqueue_script( 'gforms-js' );
+      wp_enqueue_script( 'settcalc-scripts-js' );
 
     }
 
     public function localize_js_vars(){
-      // wp_localize_script( 'gc-scripts-js', 'site_url', site_url() );
-      //
+      wp_localize_script( 'settcalc-scripts-js', 'site_url', site_url() );
+
 
     }
 
