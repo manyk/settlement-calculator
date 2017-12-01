@@ -1,8 +1,10 @@
 <?php
 
 namespace SettlementCalculator;
-use SettlementCalculator\Library\Shortcodes as Shortcodes;
+
+use SettlementCalculator\Library\Settings as Settings;
 use SettlementCalculator\Library\Enqueues as Enqueues;
+use SettlementCalculator\Library\Shortcodes as Shortcodes;
 
 
 class Settlement_Calculator {
@@ -22,8 +24,9 @@ class Settlement_Calculator {
 	}
 
 	protected function _init(){
-    new Shortcodes;
+    new Settings;
     new Enqueues;
+    new Shortcodes;
 	}
 
 }

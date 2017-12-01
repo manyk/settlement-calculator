@@ -2,9 +2,9 @@
 
 /**
  * Plugin Name: Settlement Calculator
- * Plugin URI: ''
- * Description: My custom plugin.
- * Version: 0.1
+ * Plugin URI: 'https://github.com/Cyberworld-builders/settlement-calculator'
+ * Description: Creates a shortcode to display an injury settlement calculator anywhere on your wordpress site.
+ * Version: 1.0.1
  * Author: Jay Long
  * Author URI:
  * Text Domain:
