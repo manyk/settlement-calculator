@@ -1,16 +1,23 @@
 div.settlement-calculator-wrapper {
+  font-family: Calibri, Arial !important;
+  color: #363636;
   width: 100%;
-  font-family: 'Roboto Slab', serif;
   font-size: 16px;
   color: #333;
   font-weight: 300;
   line-height: 1.625; }
-  div.settlement-calculator-wrapper .calculator-results {
-    display: none; }
+  div.settlement-calculator-wrapper .calculator-form {
+    border: 1px solid #b9ced5;
+    padding: 25px;
+    background: #e7f0f3; }
   div.settlement-calculator-wrapper h1 {
-    font-size: 30px;
+    font-size: 34px;
     font-weight: 400;
     line-height: 1.2; }
+  div.settlement-calculator-wrapper .header p {
+    padding-top: 5px;
+    font-size: 9pt;
+    text-align: left; }
   div.settlement-calculator-wrapper h2 {
     color: black;
     font-size: 24px;
@@ -23,19 +30,12 @@ div.settlement-calculator-wrapper {
     line-height: 1.0; }
   @media only screen and (min-width: 768px) {
     div.settlement-calculator-wrapper {
-      width: 70%;
+      width: 60%;
       margin-left: auto;
       margin-right: auto; } }
   @media only screen and (min-width: 768px) {
     div.settlement-calculator-wrapper div.header {
-      margin: 35px; } }
-  @media only screen and (min-width: 768px) {
-    div.settlement-calculator-wrapper div.header, div.settlement-calculator-wrapper div.settlement-estimate {
-      margin-top: 35px; } }
-  div.settlement-calculator-wrapper div.header p, div.settlement-calculator-wrapper div.settlement-estimate p {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left; }
+      margin-bottom: 35px; } }
   div.settlement-calculator-wrapper div.calculate-controls {
     text-align: center;
     margin-top: 35px;
@@ -49,79 +49,142 @@ div.settlement-calculator-wrapper {
       box-shadow: 10px 10px 5px #888888;
       background-color: #ff9626;
       border: 2px solid #000;
-      color: #000; }
+      color: #000;
+      outline: 0;
+      border: 0;
+      color: #fff;
+      font-size: 17px;
+      line-height: normal;
+      font-weight: 500;
+      border-radius: 30px/50px;
+      box-shadow: 0 2px 0 0 #3a5f6b;
+      padding: 8px 4px 6px 19px;
+      background: #01b660;
+      background: -moz-linear-gradient(top, #01b660 0, #00a255 100%);
+      background: -webkit-linear-gradient(top, #01b660 0, #00a255 100%);
+      background: linear-gradient(to bottom, #01b660 0, #00a255 100%);
+      transition: all .2s ease; }
       @media only screen and (min-width: 768px) {
         div.settlement-calculator-wrapper div.calculate-controls button {
           width: 50%; } }
     div.settlement-calculator-wrapper div.calculate-controls button:hover {
-      background-color: #e4e4e4; }
+      color: #d3ffea;
+      text-decoration: underline;
+      background: #058741;
+      background: -moz-linear-gradient(top, #058741 0, #006830 100%);
+      background: -webkit-linear-gradient(top, #058741 0, #006830 100%);
+      background: linear-gradient(to bottom, #058741 0, #006830 100%);
+      box-shadow: 0 2px 0 0 #002e3d; }
   div.settlement-calculator-wrapper div.settlement-estimate {
-    color: #000;
-    padding-top: 10px;
-    padding-bottom: 25px; }
-    div.settlement-calculator-wrapper div.settlement-estimate div.top {
-      border: 2px solid #000;
-      background-color: #569ae8;
-      padding-top: 10px;
-      padding-bottom: 25px; }
-      div.settlement-calculator-wrapper div.settlement-estimate div.top input {
+    border: 1px solid #b9ced5;
+    padding: 15px;
+    margin: 15px; }
+    div.settlement-calculator-wrapper div.settlement-estimate p {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      font-size: 8pt; }
+  div.settlement-calculator-wrapper .calculator-results {
+    display: none; }
+    div.settlement-calculator-wrapper .calculator-results #settlementEstimate {
+      margin: 25px;
+      font-size: 48pt; }
+    div.settlement-calculator-wrapper .calculator-results div.settlement-estimate {
+      margin: 0px;
+      margin-bottom: 25px;
+      padding-bottom: 25px;
+      background: #e7f0f3; }
+      div.settlement-calculator-wrapper .calculator-results div.settlement-estimate div.top span {
         font-size: 48px;
         text-align: center;
         margin-left: auto;
         margin-right: auto;
         width: 100%;
-        height: 85px;
-        border: 2px solid #000; }
+        height: 85px; }
         @media only screen and (min-width: 768px) {
-          div.settlement-calculator-wrapper div.settlement-estimate div.top input {
+          div.settlement-calculator-wrapper .calculator-results div.settlement-estimate div.top span {
             width: 33%; } }
-    div.settlement-calculator-wrapper div.settlement-estimate div.bottom {
-      display: none;
-      margin-top: 5px;
-      border: 2px solid #000;
-      background-color: #e4e4e4;
-      padding-top: 10px;
-      padding-bottom: 55px; }
-      @media only screen and (min-width: 768px) {
-        div.settlement-calculator-wrapper div.settlement-estimate div.bottom {
-          padding-bottom: 15px; } }
-      div.settlement-calculator-wrapper div.settlement-estimate div.bottom input {
-        border: 2px solid #000; }
-  div.settlement-calculator-wrapper div.footer {
-    text-align: center;
-    margin-left: auto;
-    margin-left: auto; }
-    div.settlement-calculator-wrapper div.footer h3, div.settlement-calculator-wrapper div.footer h4 {
-      width: 100%;
-      font-weight: 500; }
-    div.settlement-calculator-wrapper div.footer h3 {
-      font-size: 18px; }
-    div.settlement-calculator-wrapper div.footer h4 {
-      text-align: left;
-      font-size: 16px; }
-    div.settlement-calculator-wrapper div.footer p {
-      text-align: left; }
-    div.settlement-calculator-wrapper div.footer .button {
-      vertical-align: text-top;
-      border-radius: 16px;
-      border: 3px solid #000;
-      height: 155px;
-      padding: 40px;
-      margin: 15px;
-      cursor: pointer;
-      line-height: 100%; }
-      div.settlement-calculator-wrapper div.footer .button h3 {
-        font-size: 16px; }
-      div.settlement-calculator-wrapper div.footer .button a {
+      div.settlement-calculator-wrapper .calculator-results div.settlement-estimate div.bottom {
+        display: none;
+        margin-top: 5px;
+        border: 2px solid #000;
+        background-color: #e4e4e4;
+        padding-top: 10px;
+        padding-bottom: 55px; }
+        @media only screen and (min-width: 768px) {
+          div.settlement-calculator-wrapper .calculator-results div.settlement-estimate div.bottom {
+            padding-bottom: 15px; } }
+        div.settlement-calculator-wrapper .calculator-results div.settlement-estimate div.bottom input {
+          border: 2px solid #000; }
+      div.settlement-calculator-wrapper .calculator-results div.settlement-estimate .button {
+        vertical-align: middle;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100% !important;
+        height: 75px;
+        border-radius: 0px;
+        box-shadow: 10px 10px 5px #888888;
+        background-color: #ff9626;
+        border: 2px solid #000;
+        outline: 0;
+        border: 0;
+        font-size: 17px;
+        line-height: normal;
+        font-weight: 500;
+        border-radius: 30px/50px;
+        box-shadow: 0 2px 0 0 #3a5f6b;
+        padding: 12px;
+        background: #01b660;
+        background: -moz-linear-gradient(top, #01b660 0, #00a255 100%);
+        background: -webkit-linear-gradient(top, #01b660 0, #00a255 100%);
+        background: linear-gradient(to bottom, #01b660 0, #00a255 100%);
+        transition: all .2s ease;
+        font-size: 18px;
+        color: #ffffff; }
+        @media only screen and (min-width: 768px) {
+          div.settlement-calculator-wrapper .calculator-results div.settlement-estimate .button {
+            width: 50%; } }
+        div.settlement-calculator-wrapper .calculator-results div.settlement-estimate .button h3 {
+          font-size: 14px;
+          color: #ffffff;
+          margin-top: 6px; }
+        div.settlement-calculator-wrapper .calculator-results div.settlement-estimate .button span {
+          font-size: 12pt;
+          color: #ffffff; }
+      div.settlement-calculator-wrapper .calculator-results div.settlement-estimate .request-call {
+        padding-top: 25px; }
+      div.settlement-calculator-wrapper .calculator-results div.settlement-estimate .button:hover {
+        color: #d3ffea;
+        text-decoration: underline;
+        background: #058741;
+        background: -moz-linear-gradient(top, #058741 0, #006830 100%);
+        background: -webkit-linear-gradient(top, #058741 0, #006830 100%);
+        background: linear-gradient(to bottom, #058741 0, #006830 100%);
+        box-shadow: 0 2px 0 0 #002e3d; }
+      div.settlement-calculator-wrapper .calculator-results div.settlement-estimate a {
         font-size: 28px;
-        margin-top: 25px; }
-    div.settlement-calculator-wrapper div.footer .button:hover {
-      background-color: #e4e4e4; }
-    div.settlement-calculator-wrapper div.footer a {
-      font-size: 28px;
-      color: black; }
-    div.settlement-calculator-wrapper div.footer a:hover {
-      text-decoration: none; }
+        color: black; }
+      div.settlement-calculator-wrapper .calculator-results div.settlement-estimate a:hover {
+        text-decoration: none; }
+    div.settlement-calculator-wrapper .calculator-results div.footer {
+      text-align: center;
+      margin-left: auto;
+      margin-left: auto; }
+      div.settlement-calculator-wrapper .calculator-results div.footer h3, div.settlement-calculator-wrapper .calculator-results div.footer h4 {
+        width: 100%;
+        font-weight: 500;
+        text-align: center;
+        padding: 0px; }
+      div.settlement-calculator-wrapper .calculator-results div.footer h3 {
+        font-size: 18px;
+        margin-left: auto;
+        margin-right: auto; }
+      div.settlement-calculator-wrapper .calculator-results div.footer h4 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: 16px; }
+      div.settlement-calculator-wrapper .calculator-results div.footer p {
+        font-size: 9pt; }
   @media only screen and (min-width: 768px) {
     div.settlement-calculator-wrapper .text-xs-center {
       text-align: left; } }

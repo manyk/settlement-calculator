@@ -35,10 +35,10 @@ jQuery(document).ready(function($){
     var without_damages = medical_expenses + future_medical + lost_earnings + future_medical + property_damages;
     var just_damages = total - without_damages;
 
-    $('#settlementEstimate').val(total);
+    $('#settlementEstimate').html('$' + total.toLocaleString());
 
 
-    $('.calculator-form').hide('fast',function(){
+    $('.calculator-form').hide('slow',function(){
       $('.calculator-results').show('fast');
     });
 
