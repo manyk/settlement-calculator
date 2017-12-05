@@ -80,7 +80,7 @@
             <button class="btn btn-large btn-primary btn-block calculate">Calculate</button>
       </div>
       <div class="row text-center">
-            Powered by <a href=“https://lawsuitinfocenter.com/auto-accident-settlement-calculator/” rel=“nofollow” >Lawsuit InfoCenter</a>
+            Powered by <a href='https://lawsuitinfocenter.com/auto-accident-settlement-calculator/' rel=“nofollow” >Lawsuit InfoCenter</a>
       </div>
 
 
