@@ -38,6 +38,45 @@ div.settlement-calculator-wrapper {
   @media only screen and (min-width: 768px) {
     div.settlement-calculator-wrapper div.header {
       margin-bottom: 35px; } }
+  div.settlement-calculator-wrapper input[type=number]::-webkit-inner-spin-button,
+  div.settlement-calculator-wrapper input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; }
+  div.settlement-calculator-wrapper input[type=number] {
+    -moz-appearance: textfield;
+    width: 120px;
+    float: right;
+    margin: 5px; }
+  div.settlement-calculator-wrapper .question-circle {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    width: 22px;
+    height: 22px;
+    border: 1px solid #67aabd;
+    background: #d8e2e6;
+    border-radius: 100%;
+    color: #5396aa;
+    padding: 0px;
+    padding-bottom: 2px;
+    transition: all .2s ease;
+    font-size: 10pt; }
+  div.settlement-calculator-wrapper .question-circle:hover {
+    background: #007aa0;
+    color: #fff;
+    border: 1px solid #007aa0; }
+  div.settlement-calculator-wrapper .tooltip-inner {
+    background-color: #73AD21;
+    color: #FFFFFF;
+    border: 1px solid green;
+    padding: 15px;
+    font-size: 20px; }
+  div.settlement-calculator-wrapper label {
+    margin: 5px;
+    float: left; }
   div.settlement-calculator-wrapper div.calculate-controls {
     text-align: center;
     margin-top: 35px;

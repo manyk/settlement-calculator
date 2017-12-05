@@ -13,10 +13,10 @@
 
 
       <div class="row">
-        <div class="col-sm-12 col-md-6 text-xs-center">
-          <label for="medicalExpenses">Medical Expenses   </label>
+        <div class="col-sm-12 col-md-8 text-xs-center">
+          <label for="medicalExpenses">Medical Expenses  <a href="#" data-toggle="tooltip" data-trigger="hover focus" title="Medical bills and expenses. "><span class="question-circle"  aria-hidden="true">?</span></a> </label>
         </div>
-        <div class="col-sm-12 col-md-6 text-right">
+        <div class="col-sm-12 col-md-4">
           <div class="form-group">
 
             <input type="number" class="form-control" id="medicalExpenses" placeholder="$">
@@ -26,10 +26,10 @@
 
 
       <div class="row">
-        <div class="col-sm-12 col-md-6 text-xs-center">
-          <label for="propertyDamages">Property Damages</label>
+        <div class="col-sm-12 col-md-8 text-xs-center">
+          <label for="propertyDamages">Property Damages <a href="#" data-toggle="tooltip" title="Primarily used for auto injuries. Leave empty for personal injury.  "><span class="question-circle"  aria-hidden="true">?</span></i></a></label>
         </div>
-        <div class="col-sm-12 col-md-6 text-right">
+        <div class="col-sm-12 col-md-4 text-right">
           <div class="form-group">
 
             <input type="number" class="form-control" id="propertyDamages" placeholder="$">
@@ -38,10 +38,10 @@
       </div>
 
       <div class="row">
-        <div class="col-sm-12 col-md-6 text-xs-center">
-          <label for="lostEarnings">Lost Earnings</label>
+        <div class="col-sm-12 col-md-8 text-xs-center">
+          <label for="lostEarnings">Lost Earnings <a href="#" data-toggle="tooltip" title="Lost income, wages or benefits like PTO.  "><span class="question-circle"  aria-hidden="true">?</span></i></a></label>
         </div>
-        <div class="col-sm-12 col-md-6 text-right">
+        <div class="col-sm-12 col-md-4 text-right">
           <div class="form-group">
 
             <input type="number" class="form-control" id="lostEarnings" placeholder="$">
@@ -50,10 +50,10 @@
       </div>
 
       <div class="row">
-        <div class="col-sm-12 col-md-6 text-xs-center">
-          <label for="futureMedical">Estimated Future Medical Expenses</label>
+        <div class="col-sm-12 col-md-8 text-xs-center">
+          <label for="futureMedical">Estimated Future Medical Expenses <a href="#" data-toggle="tooltip" title="Future and ongoing medical treatments.  "><span class="question-circle"  aria-hidden="true">?</span></i></a></label>
         </div>
-        <div class="col-sm-12 col-md-6 text-right">
+        <div class="col-sm-12 col-md-4 text-right">
           <div class="form-group">
 
             <input type="number" class="form-control" id="futureMedical" placeholder="$">
@@ -63,13 +63,13 @@
 
 
       <div class="row">
-        <div class="col-sm-12 col-md-6 text-xs-center">
-          <label for="damagesMultiplier">Multiplier For Damages (1-5)</label>
+        <div class="col-sm-12 col-md-8 text-xs-center">
+          <label for="damagesMultiplier">Multiplier For Damages (1-5) <a href="#" data-toggle="tooltip" title="The more serious, long-lasting, and painful the injuries, the higher the multiplier. (Number 1-5)  "><span class="question-circle"  aria-hidden="true">?</span></i></a></label>
         </div>
-        <div class="col-sm-12 col-md-6 text-right">
+        <div class="col-sm-12 col-md-4 text-right">
           <div class="form-group">
 
-            <input type="number" class="form-control pull-right" style="width: 25%;" id="damagesMultiplier" placeholder="">
+            <input type="number" class="form-control pull-right" style="margin: 5px;width: 30%;" id="damagesMultiplier" placeholder="1-5">
           </div>
         </div>
       </div>
@@ -80,7 +80,7 @@
             <button class="btn btn-large btn-primary btn-block calculate">Calculate</button>
       </div>
       <div class="row text-center">
-            Powered by <a href='https://lawsuitinfocenter.com/auto-accident-settlement-calculator/' rel=“nofollow” >Lawsuit InfoCenter</a>
+            Powered by <a href='https://lawsuitinfocenter.com/auto-accident-settlement-calculator/' rel=“nofollow” >Lawsuit Info Center</a>
       </div>
 
 
@@ -120,7 +120,14 @@
         <div class="col-md-12 text-center">
           <h3>About The Calculation</h3>
           <h4>Damages and The Multiplier</h4>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+          <p>
+            <i>Your settlement estimate was calculated with the following formula:<br />
+              <strong>Current Medical Bills + Expected Ongoing Medical Treatment x Pain & Suffering Multiplier = Medical and General Damages.</strong><br />
+              <strong>Medical & General Damage Number + Loss of Income + Property Damage = Your Estimate.</strong><br />
+              Again, this is a very rough estimate based on values you enter. For more accurate estimates, and a free consultation please call the number above, or click the button to have an attorney call you.
+            </i>
+          </p>
         </div>
 
 

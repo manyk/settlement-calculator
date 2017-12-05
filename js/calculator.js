@@ -31,8 +31,8 @@ jQuery(document).ready(function($){
       damages_multiplier = Number($('#damagesMultiplier').val());
     }
 
-    var total = ( ( medical_expenses + future_medical ) * damages_multiplier ) + lost_earnings + future_medical + property_damages;
-    var without_damages = medical_expenses + future_medical + lost_earnings + future_medical + property_damages;
+    var total = ( ( medical_expenses + future_medical ) * damages_multiplier ) + lost_earnings + property_damages;
+    var without_damages = medical_expenses + future_medical + lost_earnings + property_damages;
     var just_damages = total - without_damages;
 
     $('#settlementEstimate').html('$' + total.toLocaleString());
