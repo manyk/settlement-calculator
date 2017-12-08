@@ -4,14 +4,20 @@ div.settlement-calculator-wrapper {
     font-family: Calibri, Arial !important;
     color: #363636;
     width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+// @media only screen and (min-width: 768px ){ min-width: 800px; }
   .calculator-form {
     border: 1px solid #b9ced5;
     padding: 25px;
     background: #e7f0f3;
-    max-width: 564px;
+    // max-width: 664px;
+
   }
 
 
+  // .calculator-form, .calculator-results { width: 800px; }
 
   h1 {
     font-size: 34px;
@@ -123,7 +129,7 @@ div.settlement-calculator-wrapper {
       outline: 0;
           border: 0;
           color: #fff;
-          font-size: 17px;
+          font-size: 25px;
           line-height: normal;
           font-weight: 500;
           border-radius: 30px/50px;
@@ -167,12 +173,14 @@ div.settlement-calculator-wrapper {
 
   .calculator-results {
     display: none;
+// @media only screen and (min-width: 768px ){ width: 100%; }
     #settlementEstimate {
       margin: 25px;
       // display: none;
       font-size: 48pt;
     }
       div.settlement-estimate {
+
         margin: 0px;
         margin-bottom: 25px;
         padding-bottom: 25px;
@@ -207,7 +215,8 @@ div.settlement-calculator-wrapper {
           margin-right: auto;
           margin-bottom: 15px;
           width: 100% !important;
-          height: 75px;
+          // min-width: 300px;
+          height: 95px;
           border-radius: 0px;
           box-shadow: 10px 10px 5px #888888;
           background-color: #ff9626;
@@ -236,20 +245,21 @@ div.settlement-calculator-wrapper {
           font-size: 18px;
           // margin-top: 25px;
           color: #ffffff;
-
-          h3 {
-            font-size: 14px;
-            color: #ffffff;
-            margin-top: 6px;
-          }
-          span { font-size: 12pt; color: #ffffff; }
+          h1, h2, h3, h4, span { color: #ffffff; }
+          h1 { margin-bottom: 0px; padding-top: 0px; font-size: 68px; font-weight: 700; }
+          h2 { font-size: 25px; margin-top: 0px; margin-bottom: 0px; font-weight: 700;}
+          h3 { font-size: 25px; margin-top: 0px; margin-bottom: 0px;}
+          h4 { font-size: 18px; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; }
+          span { font-size: 25px; }
 
         }
+        .call-attorney { padding-top: 25px;}
         .request-call { padding-top: 25px;}
+
 
         .button:hover{
           color: #d3ffea;
-          text-decoration: underline;
+          // text-decoration: underline;
           background: #058741;
           background: -moz-linear-gradient(top,#058741 0,#006830 100%);
           background: -webkit-linear-gradient(top,#058741 0,#006830 100%);
@@ -268,11 +278,13 @@ div.settlement-calculator-wrapper {
 
       }
 
+      @media only screen and (min-width: 768px ){ .calculator-results {  } }
+
       div.footer {
         text-align: center;
         margin-left: auto;
-        margin-left: auto;
-        // width: 80%;
+        margin-right: auto;
+        width: 100%;
         h3, h4 {
           width: 100%;
           font-weight: 500;
@@ -292,7 +304,9 @@ div.settlement-calculator-wrapper {
           font-size: 16px;
         }
         p {
+          text-align: center;
           font-size: 9pt;
+
         }
 
       }
